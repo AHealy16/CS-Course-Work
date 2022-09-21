@@ -1,5 +1,6 @@
 package com.company;
 import java.sql.*;
+//this class is redundant
 
 public class Database_Management {
 
