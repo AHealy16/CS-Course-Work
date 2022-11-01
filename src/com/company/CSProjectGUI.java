@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
 //All registration GUI code
@@ -59,6 +60,12 @@ public class CSProjectGUI extends JDialog {
         String confirmPassword = String.valueOf(confirmPasswordPF.getPassword());
         String userNameCheck;
 
+        //Uses the User object to set all the details about the user making these details obtainable to other classes
+        User user1 = new User();
+        user1.setEmail(email);
+        user1.setName(name);
+        user1.setPassword(password);
+
         try{
             //checks that the name username being entered is unique
             Connection con = DriverManager.getConnection("jdbc:ucanaccess://" + DatabaseLocation, "", "");
@@ -81,6 +88,7 @@ public class CSProjectGUI extends JDialog {
             System.out.println(e);
         }
 
+        //Checks that all the fields were entered
         if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
             JOptionPane.showMessageDialog(this,
                     "Please enter all fields",
@@ -89,6 +97,7 @@ public class CSProjectGUI extends JDialog {
             return;
         }
 
+        //Checks the passwords entered match
         if (!password.equals(confirmPassword)) {
             JOptionPane.showMessageDialog(this,
                     "Passwords do not match",
@@ -111,9 +120,12 @@ public class CSProjectGUI extends JDialog {
     //Database connection location
     private final String DatabaseLocation = System.getProperty("user.dir") + "\\CS Project DB.accdb";
 
+
     private User addUserToDatabase(String name, String email, String password) {
         User user = null;
 
+        User user2 = new User();
+        password = user2.getPassword();
         //Connection to database
         try {
             Connection con = DriverManager.getConnection("jdbc:ucanaccess://" + DatabaseLocation, "", "");
