@@ -10,7 +10,6 @@ import java.security.SecureRandom;
 public class Hashing {
 
     User findPassword = new User();
-
     String password = findPassword.getPassword();
 
     private Hashing() throws NoSuchAlgorithmException {

@@ -18,17 +18,16 @@ public class Dashboard extends JFrame{
         setSize(1000, 700);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        //Makes it so when you click the login button the login tab is opened and dashboard is closed
+        //Uses and ActionListener to know when you hit the button and then closes the Dashboard tab and opens the Login tab
         loginBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Dashboard.this.dispose();
                 Login loginForm = new Login(Dashboard.this);
             }
-
         });
 
-        //Makes it so when you click the register button the register tab is opened and dashboard is closed
+        //Uses and ActionListener to know when you hit the button and then closes the Dashboard tab and opens the Registration tab
         registerBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -39,6 +38,4 @@ public class Dashboard extends JFrame{
         });
      setVisible(true);
     }
-
-
 }
