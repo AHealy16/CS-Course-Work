@@ -32,7 +32,9 @@ public class Login extends JDialog {
                 user = getAuthenticatedUser(name, password);
                 //if the users details weren't in the database user will remain null and the else statement will catch it and notify the user sending them back to the login screen
                 if (user != null) {
-                    dispose();
+                    Login.this.dispose();
+                    AddProduct addProductForm = new AddProduct();
+                    addProductForm.setVisible(true);
                 }
                 else {
                     JOptionPane.showMessageDialog(Login.this,

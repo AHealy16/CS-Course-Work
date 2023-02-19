@@ -35,8 +35,6 @@ public class CSProjectGUI extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 registerUser();
             }
-
-
         });
 
         //makes the cancel button close the register tab and reopen the dashboard tab

@@ -1,6 +1,9 @@
 package com.company;
-import java.sql.*;
-//this class is redundant
+
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class Database_Management {
 
@@ -16,5 +19,3 @@ public class Database_Management {
         }
     }
 }
-
-
