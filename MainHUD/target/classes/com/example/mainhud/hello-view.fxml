@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="833.0" prefWidth="803.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainhud.HelloController">
+    <padding>
+        <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+    </padding>
+   <children>
+      <TabPane prefHeight="32.0" prefWidth="706.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300" prefWidth="740.0" />
+            </content>
+          </Tab>
+          <Tab text="Add Product">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="700.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
