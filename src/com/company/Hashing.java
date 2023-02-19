@@ -9,20 +9,14 @@ import java.security.SecureRandom;
 
 public class Hashing {
 
-    User user1 = new User();
-    String password = user1.getPassword();
+    User findPassword = new User();
+    String password = findPassword.getPassword();
 
-    Hashing HashPassword = new Hashing(password);
+    private Hashing() throws NoSuchAlgorithmException {
+        MessageDigest md = MessageDigest.getInstance("SHA-256");
+        md.update(password.getBytes(StandardCharsets.UTF_8));
 
-    String HashedPassword = HashPassword.password;
-
-    private Hashing(String password) throws NoSuchAlgorithmException {
-    MessageDigest md = MessageDigest.getInstance("SHA-256");
-    md.update(this.password.getBytes(StandardCharsets.UTF_8));
-    user1.setPassword(HashedPassword);
     }
-
-
 }
 
 
