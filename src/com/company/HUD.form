@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.company.HUD">
-  <grid id="27dc6" binding="HUDForm" layout-manager="GridLayoutManager" row-count="6" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="HUDForm" layout-manager="GridLayoutManager" row-count="7" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="821" height="830"/>
+      <xy x="20" y="20" width="821" height="825"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -31,7 +31,7 @@
       </component>
       <component id="3be7" class="javax.swing.JLabel" binding="amountLabel">
         <constraints>
-          <grid row="0" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="4" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Amount of Good"/>
@@ -39,7 +39,7 @@
       </component>
       <component id="7030e" class="javax.swing.JLabel" binding="perishLabel">
         <constraints>
-          <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Perishable"/>
@@ -47,7 +47,7 @@
       </component>
       <component id="a71e0" class="javax.swing.JLabel" binding="perish1">
         <constraints>
-          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -55,7 +55,7 @@
       </component>
       <component id="d9784" class="javax.swing.JLabel" binding="perish2">
         <constraints>
-          <grid row="2" column="7" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="10" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -63,7 +63,7 @@
       </component>
       <component id="f8a85" class="javax.swing.JLabel" binding="amount2">
         <constraints>
-          <grid row="2" column="4" row-span="2" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="4" row-span="2" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -95,7 +95,7 @@
       </component>
       <component id="b32e6" class="javax.swing.JLabel" binding="amount1">
         <constraints>
-          <grid row="1" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="4" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -103,7 +103,7 @@
       </component>
       <component id="dd713" class="javax.swing.JLabel" binding="amount3">
         <constraints>
-          <grid row="4" column="4" row-span="2" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="4" row-span="2" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -111,7 +111,7 @@
       </component>
       <component id="3697a" class="javax.swing.JLabel" binding="perish3">
         <constraints>
-          <grid row="4" column="7" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="10" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -139,6 +139,22 @@
         </constraints>
         <properties>
           <text value="Label"/>
+        </properties>
+      </component>
+      <component id="f467" class="javax.swing.JButton" binding="loadButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Load"/>
+        </properties>
+      </component>
+      <component id="c60e3" class="javax.swing.JButton" binding="add_product_page">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Add Product"/>
         </properties>
       </component>
     </children>

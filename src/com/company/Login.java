@@ -41,8 +41,8 @@ public class Login extends JDialog {
                 //and send an error message while sending them back to the login window
                 if (user != null) {
                     Login.this.dispose();
-                    AddProduct addProductForm = new AddProduct();
-                    addProductForm.setVisible(true);
+                    HUD HUDForm = new HUD(parent);
+                    HUDForm.setVisible(true);
                 }
                 else {
                     JOptionPane.showMessageDialog(Login.this,
